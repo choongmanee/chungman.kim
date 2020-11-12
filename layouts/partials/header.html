@@ -1,10 +1,23 @@
 <header>
     {{ $currentPage := . }}
-    <nav>
-        {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}">
-                {{ .Name }}
-            </a>
-        {{ end }}
-    </nav>
+    <div id="header_left">
+        <nav>
+            {{ range .Site.Menus.main }}
+                {{ if eq .URL "/" }}
+                    <h1 id="logo">
+                        <a href="{{ .URL }}">
+                            chungman.kim
+                        </a>
+                    </h1>
+                {{ else }}
+                    <a href="{{ .URL }}">
+                        {{ .Name }}
+                    </a>
+                {{ end }}
+            {{ end }}
+        </nav>
+    </div>
+    <div id="header_right">
+        social stuff placeholder
+    </div>
 </header>
