@@ -1,0 +1,54 @@
+@import "node_modules/normalize.css/normalize";
+@import "colors";
+@import "fonts";
+
+body {
+  font-family: $roboto;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $open-sans;
+  font-weight: normal;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh;
+
+  grid-template-areas: "sidebar main main main";
+}
+
+aside {
+  grid-area: sidebar;
+
+  display: grid;
+  place-items: center;
+
+  background-color: $nyanza;
+  overflow: hidden;
+}
+
+#main {
+  grid-area: main;
+  overflow-y: scroll;
+}
+
+header {
+  background-color: $dark-purple;
+
+  a {
+    color: $nyanza;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+#content {
+  overflow-y: auto;
+}
+
+footer {
+}
