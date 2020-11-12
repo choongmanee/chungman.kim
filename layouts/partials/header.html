@@ -1,5 +1,6 @@
 <header>
     {{ $currentPage := . }}
+    {{ $social := .Site.Params.social }}
     <div id="header_left">
         <nav>
             {{ range .Site.Menus.main }}
@@ -18,6 +19,10 @@
         </nav>
     </div>
     <div id="header_right">
-        social stuff placeholder
+        {{ range $social }}
+            <a href="{{ .url }}">
+                {{ .name }}
+            </a>
+        {{ end }}
     </div>
 </header>

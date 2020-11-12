@@ -19,3 +19,13 @@ title = "chungman.kim"
         name = "Tags"
         url = "/tags/"
         weight = 4
+
+[params]
+    [[params.social]]
+        url = "https://www.linkedin.com/in/chungmankim/"
+        name = "linkedin"
+        weight = 1
+    [[params.social]]
+        url = "https://github.com/choongmanee"
+        name = "github"
+        weight = 2
