@@ -1,6 +1,7 @@
 baseURL = "https://chungman.kim/"
 languageCode = "en-us"
 title = "chungman.kim"
+googleAnalytics = "UA-157392301-1"
 
 [menu]
     [[menu.main]]
