@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5, h6 {
 
   padding: 1em;
 
+  // TODO: add bottom border
+
+  & > div {
+    display: grid;
+    align-items: center;
+  }
+
   #logo {
     display: inline-block;
     margin: 0;
@@ -42,16 +49,15 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
   }
 
-  a {
-    color: black;
+  .header__social {
+    justify-content: end;
   }
 
-  ul {
-    display: inline-block;
+  a {
+    color: black;
+    grid-row: 1;
 
-    li {
-      display: inline-block;
-    }
+  // TODO: set visited anchors to black
   }
 }
 

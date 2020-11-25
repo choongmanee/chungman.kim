@@ -1,7 +1,7 @@
-<header>
+<header class="header">
     {{ $currentPage := . }}
     {{ $social := .Site.Params.social }}
-    <div id="header_left">
+    <div class="header__nav">
         <nav>
             {{ range .Site.Menus.main }}
                 {{ if eq .URL "/" }}
@@ -18,9 +18,9 @@
             {{ end }}
         </nav>
     </div>
-    <div id="header_right">
+    <div class="header__social">
         {{ range $social }}
-            <a href="{{ .url }}" target="_blank">
+            <a href="{{ .url }}" target="_blank" class="header__social--link">
                 <i data-feather="{{ .name }}"></i>
             </a>
         {{ end }}
