@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/choongmanee/chungman.kim#readme",
   "dependencies": {
+    "cypress": "^6.0.0",
     "normalize.css": "^8.0.1"
   }
 }
